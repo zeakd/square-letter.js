@@ -1,0 +1,33 @@
+{
+  "name": "square-letter",
+  "version": "0.1.0",
+  "description": "awesome canvas work for square type letter (Korean, Chinese, Japanese)",
+  "main": "square-letter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeakd/square-letter.js.git"
+  },
+  "keywords": [
+    "canvas",
+    "korean",
+    "japanese",
+    "chinese",
+    "art"
+  ],
+  "author": "zeakd <stuzeakd@kaist.ac.kr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeakd/square-letter.js/issues"
+  },
+  "homepage": "https://github.com/zeakd/square-letter.js#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "material-design-lite": "^1.0.6"
+  }
+}
