@@ -11,7 +11,7 @@ gulp.task('browser-sync', function () {
             baseDir: "./demo",
             routes: {
                 "/node_modules": "./node_modules",
-                "/square-letter.js": "./square-letter.js"
+                "/square-letters.js": "./square-letters.js"
             }
         },
         open: false
@@ -19,7 +19,7 @@ gulp.task('browser-sync', function () {
     // gulp.watch("app/scss/*.scss", ['sass']);
 
     gulp.watch([
-        "./demo/*.html",
-        "./square-letter.js"
+        "./square-letters.js",
+        "./demo/**/*"
     ]).on('change', browserSync.reload);
 })

@@ -1,7 +1,6 @@
 <!DOCTYPE>
 <html>
 <head>
-
     <title>Square Letters</title>
     <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -10,39 +9,71 @@
     <div id='root'>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
             mdl-layout--fixed-tabs">
-            <header class="mdl-layout__header">
+<!--             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
-                  <!-- Title -->
                     <span class="mdl-layout-title">Title</span>
                 </div>
-                <!-- Tabs -->
                 <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
                     <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
                     <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
                     <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
                 </div>
             </header>
-            <!-- <div class="mdl-layout__drawer">
+ -->            <!-- <div class="mdl-layout__drawer">
                 <span class="mdl-layout-title">Title</span>
             </div> -->
-            <main class="mdl-layout__content">
-                <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <main class=" mdl-layout__content">
+                <section>
+                    <div class="title-content">
+                        <canvas id='title-canvas'></canvas>
+                        <h1>square-letters.js</h1>
+                        <h2>사각글자</h2>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-content">
+                        <canvas id='demo-set-letters-render-canvas'></canvas>
+                        <form>
+                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-horizontal">
+                                <input type="radio" id="option-horizontal" class="mdl-radio__button" name="render-options" value="false" checked>
+                                <span class="mdl-radio__label">수평</span>
+                            </label>
+                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-vertical-left">
+                                <input type="radio" id="option-vertical-left" class="mdl-radio__button" name="render-options" value="left" checked>
+                                <span class="mdl-radio__label">좌종서</span>
+                            </label>
+                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-vertical-right">
+                                <input type="radio" id="option-vertical-right" class="mdl-radio__button" name="render-options" value="right" checked>
+                                <span class="mdl-radio__label">우종서</span>
+                            </label>
+                        </form>
+                    </div>
+                </section>
+                <section>
                     <div class="page-content"><!-- Your content goes here 
                     -->
+                        <canvas id='simple-demo-canvas'></canvas>
+                        <input class="mdl-slider mdl-js-slider" type="range"
+  min="0" max="100" value="25" tabindex="0" >
+                        <input class="mdl-slider mdl-js-slider" type="range"
+  min="0" max="100" value="25" tabindex="0">
                         <input class="mdl-slider mdl-js-slider" type="range"
   min="0" max="100" value="25" tabindex="0">
                     </div>
                 </section>
-                <section class="mdl-layout__tab-panel" id="fixed-tab-2">
-                    <div class="page-content"><!-- Your content goes here --></div>
+                <section>
+                    <div class="section-content">
+                        <canvas id='demo-default-letters-canvas'></canvas>
+                    </div>
                 </section>
-                <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+                <section>
                     <div class="page-content"><!-- Your content goes here --></div>
                 </section>
             </main>
         </div>
     </div>
     <script src="/node_modules/material-design-lite/material.min.js"></script>
-    <script src="/square-letter.js"></script>
+    <script src="/square-letters.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
